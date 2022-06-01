@@ -5,7 +5,7 @@ _Simple file upload server for testing_
 ## Usage
 
 ```
-$ docker run -it -p 5000:5000 andreasjansson/file-upload-server
+$ docker run -it -p 5000:5000 ghcr.io/andreasjansson/docker-file-upload-server:main
 ```
 
 Then you can send files to the server:
@@ -30,7 +30,7 @@ hello world
 You can also save downloaded files to the file system my mounting `/uploads` from the container onto the host:
 
 ```
-docker run -it -v -p 5000:5000 andreasjansson/file-upload-server
+docker run -it -v -p 5000:5000 ghcr.io/andreasjansson/docker-file-upload-server:main
 ```
 
 And in a new shell:
